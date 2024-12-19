@@ -24,7 +24,146 @@ namespace GAMES
             player1_turn = true;
         }
 
+
+        //-------------------------------
         private void button1_Click(object sender, EventArgs e)
+        {
+            if (player1_turn == true)
+            {
+                player1_turn = false;
+                ((Button)sender).Text = "X";
+                boardValue[0, 0] = X_VALUE;
+            }
+            else
+            {
+                player1_turn = true;
+                ((Button)sender).Text = "O";
+                boardValue[0, 0] = O_VALUE;
+            }
+
+            check_win();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (player1_turn == true)
+            {
+                player1_turn = false;
+                ((Button)sender).Text = "X";
+                boardValue[0, 1] = X_VALUE;
+            }
+            else
+            {
+                player1_turn = true;
+                ((Button)sender).Text = "O";
+                boardValue[0, 1] = O_VALUE;
+            }
+            check_win();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (player1_turn == true)
+            {
+                player1_turn = false;
+                ((Button)sender).Text = "X";
+                boardValue[0, 2] = X_VALUE;
+            }
+            else
+            {
+                player1_turn = true;
+                ((Button)sender).Text = "O";
+                boardValue[0, 2] = O_VALUE;
+            }
+            check_win();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (player1_turn == true)
+            {
+                player1_turn = false;
+                ((Button)sender).Text = "X";
+                boardValue[1, 0] = X_VALUE;
+            }
+            else
+            {
+                player1_turn = true;
+                ((Button)sender).Text = "O";
+                boardValue[1, 0] = O_VALUE;
+            }
+            check_win();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (player1_turn == true)
+            {
+                player1_turn = false;
+                ((Button)sender).Text = "X";
+                boardValue[1, 1] = X_VALUE;
+            }
+            else
+            {
+                player1_turn = true;
+                ((Button)sender).Text = "O";
+                boardValue[1, 1] = O_VALUE;
+            }
+            check_win();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (player1_turn == true)
+            {
+                player1_turn = false;
+                ((Button)sender).Text = "X";
+                boardValue[1, 2] = X_VALUE;
+            }
+            else
+            {
+                player1_turn = true;
+                ((Button)sender).Text = "O";
+                boardValue[1, 2] = O_VALUE;
+            }
+            check_win();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (player1_turn == true)
+            {
+                player1_turn = false;
+                ((Button)sender).Text = "X";
+                boardValue[2, 0] = X_VALUE;
+            }
+            else
+            {
+                player1_turn = true;
+                ((Button)sender).Text = "O";
+                boardValue[2, 0] = O_VALUE;
+            }
+            check_win();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (player1_turn == true)
+            {
+                player1_turn = false;
+                ((Button)sender).Text = "X";
+                boardValue[2, 1] = X_VALUE;
+            }
+            else
+            {
+                player1_turn = true;
+                ((Button)sender).Text = "O";
+                boardValue[2, 1] = O_VALUE;
+            }
+            check_win();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
         {
             if (player1_turn == true)
             {
@@ -40,7 +179,6 @@ namespace GAMES
             }
             check_win();
         }
-        
         //-------------------------------
 
         private void check_win()
@@ -228,5 +366,7 @@ namespace GAMES
             }
         }
 
+       
     }
+
 }

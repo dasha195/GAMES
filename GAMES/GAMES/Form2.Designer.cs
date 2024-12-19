@@ -187,6 +187,7 @@ namespace GAMES
             this.button7.Size = new System.Drawing.Size(144, 124);
             this.button7.TabIndex = 47;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button1_Click);
             // 
             // button8
             // 
@@ -199,6 +200,7 @@ namespace GAMES
             this.button8.Size = new System.Drawing.Size(144, 124);
             this.button8.TabIndex = 46;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button1_Click);
             // 
             // button9
             // 
@@ -211,6 +213,7 @@ namespace GAMES
             this.button9.Size = new System.Drawing.Size(144, 124);
             this.button9.TabIndex = 45;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -223,6 +226,7 @@ namespace GAMES
             this.button4.Size = new System.Drawing.Size(144, 124);
             this.button4.TabIndex = 44;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -235,6 +239,7 @@ namespace GAMES
             this.button5.Size = new System.Drawing.Size(144, 124);
             this.button5.TabIndex = 43;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button1_Click);
             // 
             // button6
             // 
@@ -247,6 +252,7 @@ namespace GAMES
             this.button6.Size = new System.Drawing.Size(144, 124);
             this.button6.TabIndex = 42;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -259,6 +265,7 @@ namespace GAMES
             this.button3.Size = new System.Drawing.Size(144, 124);
             this.button3.TabIndex = 41;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -271,6 +278,7 @@ namespace GAMES
             this.button2.Size = new System.Drawing.Size(144, 124);
             this.button2.TabIndex = 40;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1
             // 
@@ -283,6 +291,7 @@ namespace GAMES
             this.button1.Size = new System.Drawing.Size(144, 124);
             this.button1.TabIndex = 39;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
@@ -310,9 +319,7 @@ namespace GAMES
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form2";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.Text = "Крестики-нолики";
+            this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();
 

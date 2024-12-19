@@ -9,3 +9,14 @@ C:\Users\daria\OneDrive\Рабочий стол\инфа\GAMES\GAMES\obj\Debug\G
 C:\Users\daria\OneDrive\Рабочий стол\инфа\GAMES\GAMES\obj\Debug\GAMES.exe
 C:\Users\daria\OneDrive\Рабочий стол\инфа\GAMES\GAMES\obj\Debug\GAMES.pdb
 C:\Users\daria\OneDrive\Рабочий стол\инфа\GAMES\GAMES\obj\Debug\GAMES.Form2.resources
+D:\game\GAMES\GAMES\bin\Debug\GAMES.exe.config
+D:\game\GAMES\GAMES\bin\Debug\GAMES.exe
+D:\game\GAMES\GAMES\bin\Debug\GAMES.pdb
+D:\game\GAMES\GAMES\obj\Debug\GAMES.csproj.AssemblyReference.cache
+D:\game\GAMES\GAMES\obj\Debug\GAMES.Form1.resources
+D:\game\GAMES\GAMES\obj\Debug\GAMES.Form2.resources
+D:\game\GAMES\GAMES\obj\Debug\GAMES.Properties.Resources.resources
+D:\game\GAMES\GAMES\obj\Debug\GAMES.csproj.GenerateResource.cache
+D:\game\GAMES\GAMES\obj\Debug\GAMES.csproj.CoreCompileInputs.cache
+D:\game\GAMES\GAMES\obj\Debug\GAMES.exe
+D:\game\GAMES\GAMES\obj\Debug\GAMES.pdb

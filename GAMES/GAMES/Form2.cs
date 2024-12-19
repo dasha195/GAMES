@@ -24,8 +24,8 @@ namespace GAMES
             player1_turn = true;
         }
 
-        //---------------------------------
 
+        //-------------------------------
         private void button1_Click(object sender, EventArgs e)
         {
             if (player1_turn == true)
@@ -44,38 +44,37 @@ namespace GAMES
             check_win();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             if (player1_turn == true)
             {
                 player1_turn = false;
                 ((Button)sender).Text = "X";
-                boardValue[0, 0] = X_VALUE;
+                boardValue[0, 1] = X_VALUE;
             }
             else
             {
                 player1_turn = true;
                 ((Button)sender).Text = "O";
-                boardValue[0, 0] = O_VALUE;
+                boardValue[0, 1] = O_VALUE;
             }
-
             check_win();
         }
+
         private void button3_Click(object sender, EventArgs e)
         {
             if (player1_turn == true)
             {
                 player1_turn = false;
                 ((Button)sender).Text = "X";
-                boardValue[0, 0] = X_VALUE;
+                boardValue[0, 2] = X_VALUE;
             }
             else
             {
                 player1_turn = true;
                 ((Button)sender).Text = "O";
-                boardValue[0, 0] = O_VALUE;
+                boardValue[0, 2] = O_VALUE;
             }
-
             check_win();
         }
 
@@ -85,15 +84,14 @@ namespace GAMES
             {
                 player1_turn = false;
                 ((Button)sender).Text = "X";
-                boardValue[0, 0] = X_VALUE;
+                boardValue[1, 0] = X_VALUE;
             }
             else
             {
                 player1_turn = true;
                 ((Button)sender).Text = "O";
-                boardValue[0, 0] = O_VALUE;
+                boardValue[1, 0] = O_VALUE;
             }
-
             check_win();
         }
 
@@ -103,15 +101,14 @@ namespace GAMES
             {
                 player1_turn = false;
                 ((Button)sender).Text = "X";
-                boardValue[0, 0] = X_VALUE;
+                boardValue[1, 1] = X_VALUE;
             }
             else
             {
                 player1_turn = true;
                 ((Button)sender).Text = "O";
-                boardValue[0, 0] = O_VALUE;
+                boardValue[1, 1] = O_VALUE;
             }
-
             check_win();
         }
 
@@ -121,15 +118,14 @@ namespace GAMES
             {
                 player1_turn = false;
                 ((Button)sender).Text = "X";
-                boardValue[0, 0] = X_VALUE;
+                boardValue[1, 2] = X_VALUE;
             }
             else
             {
                 player1_turn = true;
                 ((Button)sender).Text = "O";
-                boardValue[0, 0] = O_VALUE;
+                boardValue[1, 2] = O_VALUE;
             }
-
             check_win();
         }
 
@@ -139,15 +135,14 @@ namespace GAMES
             {
                 player1_turn = false;
                 ((Button)sender).Text = "X";
-                boardValue[0, 0] = X_VALUE;
+                boardValue[2, 0] = X_VALUE;
             }
             else
             {
                 player1_turn = true;
                 ((Button)sender).Text = "O";
-                boardValue[0, 0] = O_VALUE;
+                boardValue[2, 0] = O_VALUE;
             }
-
             check_win();
         }
 
@@ -157,15 +152,14 @@ namespace GAMES
             {
                 player1_turn = false;
                 ((Button)sender).Text = "X";
-                boardValue[0, 0] = X_VALUE;
+                boardValue[2, 1] = X_VALUE;
             }
             else
             {
                 player1_turn = true;
                 ((Button)sender).Text = "O";
-                boardValue[0, 0] = O_VALUE;
+                boardValue[2, 1] = O_VALUE;
             }
-
             check_win();
         }
 
@@ -175,20 +169,17 @@ namespace GAMES
             {
                 player1_turn = false;
                 ((Button)sender).Text = "X";
-                boardValue[0, 0] = X_VALUE;
+                boardValue[2, 2] = X_VALUE;
             }
             else
             {
                 player1_turn = true;
                 ((Button)sender).Text = "O";
-                boardValue[0, 0] = O_VALUE;
+                boardValue[2, 2] = O_VALUE;
             }
-
             check_win();
         }
-
-
-        //---------------------------------
+        //-------------------------------
 
         private void check_win()
         {
@@ -279,6 +270,7 @@ namespace GAMES
             restart_matrix();
         }
 
+        //Перезапуск площадки
         private void restart_matrix()
         {
             for (int i = 0; i < 3; ++i)
@@ -373,5 +365,33 @@ namespace GAMES
                     return button1;
             }
         }
+
+        //Активный игрко
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (player1_turn == true)
+            {
+                label1.ForeColor = Color.MediumSpringGreen;
+                label2.ForeColor = Color.Black;
+            }
+            else
+            {
+                label2.ForeColor = Color.MediumSpringGreen;
+                label1.ForeColor = Color.Black;
+            }
+        }
+
+        
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        //Перезагрузка игры
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
+
 }

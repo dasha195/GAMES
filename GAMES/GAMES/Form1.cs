@@ -22,5 +22,15 @@ namespace GAMES
             Form2 XO = new Form2();
             XO.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

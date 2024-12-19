@@ -32,15 +32,14 @@ namespace GAMES
             {
                 player1_turn = false;
                 ((Button)sender).Text = "X";
-                boardValue[0, 0] = X_VALUE;
+                boardValue[2, 2] = X_VALUE;
             }
             else
             {
                 player1_turn = true;
                 ((Button)sender).Text = "O";
-                boardValue[0, 0] = O_VALUE;
+                boardValue[2, 2] = O_VALUE;
             }
-
             check_win();
         }
 

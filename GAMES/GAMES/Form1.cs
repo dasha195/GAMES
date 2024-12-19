@@ -19,7 +19,8 @@ namespace GAMES
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form2 XO = new Form2();
+            XO.ShowDialog();
         }
     }
 }

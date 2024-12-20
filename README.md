@@ -2,7 +2,7 @@
 
 Игры на переменке – выбирай игру и развлеки себя на переменке.
 
-<ins>Проект:</ins> Топалова Даша, Старостина Ксюша, Рубцова Марианна.
+<ins>Проект:</ins> Топалова Даша (https://github.com/dasha195), Старостина Ксюша(https://github.com/KseniaStarostina17), Рубцова Марианна(https://github.com/RubcovaMM?tab=repositories).
 
 <ins>Тип проекта:</ins> Приложение Windows Forms (.NET Framework), C#
 

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GAMES
 {
@@ -29,7 +30,11 @@ namespace GAMES
             foreach (Button b in panel1.Controls) /*активируем все кнопки на панели(делаем их доступными для нажатия).*/
                 b.Enabled = true;
 
-            Image orginal = Image.FromFile(@"img\img.jpg"); /*загружаем исходное изображение из файла.*/
+           // Image orginal = Image.FromFile(@"img\img.jpg");
+
+            string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "img.jpg");
+            Image orginal = Image.FromFile(@"img\img.jpg"); // Загружаем изображение
+       
 
             cropImageTomages(orginal, 270, 270); /*разрезаем изображение на 8 кусочков(270x270 — размер изображения).*/
 

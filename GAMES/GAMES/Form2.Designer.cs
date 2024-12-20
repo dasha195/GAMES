@@ -328,6 +328,8 @@ namespace GAMES
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form2";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "КРЕСТИКИ-НОЛИКИ";
             this.TransparencyKey = System.Drawing.Color.WhiteSmoke;
             this.ResumeLayout(false);

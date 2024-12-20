@@ -64,6 +64,7 @@ namespace GAMES
             this.button9.TabIndex = 8;
             this.button9.Text = "Новая игра";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel1
             // 

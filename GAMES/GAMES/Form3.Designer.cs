@@ -53,6 +53,7 @@ namespace GAMES
             this.button10.TabIndex = 9;
             this.button10.Text = "Выход";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -161,6 +162,7 @@ namespace GAMES
             this.button1.Size = new System.Drawing.Size(120, 111);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
@@ -173,6 +175,7 @@ namespace GAMES
             this.Name = "Form3";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Картинные пазлы";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -31,7 +31,8 @@ namespace GAMES
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            Form4 SN = new Form4();
+            SN.ShowDialog();
         }
     }
 }
